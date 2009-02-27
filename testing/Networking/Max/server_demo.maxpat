@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 191.0, 235.0, 840.0, 432.0 ],
+		"rect" : [ 116.0, 67.0, 840.0, 432.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 191.0, 235.0, 840.0, 432.0 ],
+		"defrect" : [ 116.0, 67.0, 840.0, 432.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -20,12 +20,12 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "s 5002_NetworkMessages",
-					"patching_rect" : [ 568.0, 125.0, 129.0, 17.0 ],
+					"patching_rect" : [ 567.0, 119.0, 152.0, 20.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 0,
 					"id" : "obj-1",
-					"fontname" : "Arial"
+					"numoutlets" : 0,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -33,25 +33,25 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "slider_send $1",
-					"patching_rect" : [ 568.0, 90.0, 77.0, 15.0 ],
-					"numinlets" : 2,
-					"fontsize" : 9.0,
-					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"patching_rect" : [ 567.0, 87.0, 89.0, 18.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 2,
 					"id" : "obj-2",
-					"fontname" : "Arial"
+					"numoutlets" : 1,
+					"fontsize" : 12.0
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "slider",
-					"patching_rect" : [ 568.0, 54.0, 144.0, 18.0 ],
-					"numinlets" : 1,
-					"orientation" : 1,
-					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"id" : "obj-3"
+					"patching_rect" : [ 567.0, 57.0, 144.0, 18.0 ],
+					"orientation" : 1,
+					"numinlets" : 1,
+					"id" : "obj-3",
+					"numoutlets" : 1
 				}
 
 			}
@@ -60,12 +60,12 @@
 					"maxclass" : "comment",
 					"text" : "request a new socket;\rthe script will make sure it is not already existing before adding",
 					"linecount" : 3,
-					"patching_rect" : [ 324.0, 110.0, 167.0, 38.0 ],
+					"patching_rect" : [ 339.0, 119.0, 213.0, 48.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 0,
 					"id" : "obj-4",
-					"fontname" : "Arial"
+					"numoutlets" : 0,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -73,13 +73,13 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "sprintf newsocket %s",
-					"patching_rect" : [ 210.0, 111.0, 108.0, 17.0 ],
-					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"patching_rect" : [ 210.0, 119.0, 123.0, 20.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 1,
 					"id" : "obj-5",
-					"fontname" : "Arial"
+					"numoutlets" : 1,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -87,13 +87,13 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "route newclient",
-					"patching_rect" : [ 210.0, 81.0, 80.0, 17.0 ],
-					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 210.0, 87.0, 91.0, 20.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 1,
 					"id" : "obj-6",
-					"fontname" : "Arial"
+					"numoutlets" : 2,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -101,13 +101,13 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "mxj net.multi.recv @port 5501 @group 225.1.1.1",
-					"patching_rect" : [ 210.0, 57.0, 236.0, 17.0 ],
-					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 210.0, 57.0, 270.0, 20.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 1,
 					"id" : "obj-7",
-					"fontname" : "Arial"
+					"numoutlets" : 2,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -115,13 +115,13 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "deletehosts",
-					"patching_rect" : [ 87.0, 95.0, 61.0, 15.0 ],
-					"numinlets" : 2,
-					"fontsize" : 9.0,
-					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"patching_rect" : [ 59.0, 119.0, 72.0, 18.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 2,
 					"id" : "obj-8",
-					"fontname" : "Arial"
+					"numoutlets" : 1,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -129,13 +129,13 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "newhost Wheelbarrow",
-					"patching_rect" : [ 72.0, 75.0, 109.0, 15.0 ],
-					"numinlets" : 2,
-					"fontsize" : 9.0,
-					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"patching_rect" : [ 44.0, 87.0, 129.0, 18.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 2,
 					"id" : "obj-9",
-					"fontname" : "Arial"
+					"numoutlets" : 1,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -144,13 +144,13 @@
 					"maxclass" : "newobj",
 					"varname" : "netmsgs_out",
 					"text" : "r 5002_NetworkMessages",
-					"patching_rect" : [ 200.0, 179.0, 129.0, 17.0 ],
-					"numinlets" : 0,
-					"fontsize" : 9.0,
-					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"patching_rect" : [ 210.0, 191.0, 150.0, 20.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 0,
 					"id" : "obj-10",
-					"fontname" : "Arial"
+					"numoutlets" : 1,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -158,12 +158,12 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "this must be named \"netmsgs_out\"",
-					"patching_rect" : [ 199.0, 164.0, 198.0, 17.0 ],
+					"patching_rect" : [ 210.0, 170.0, 196.0, 20.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 0,
 					"id" : "obj-11",
-					"fontname" : "Arial"
+					"numoutlets" : 0,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -171,13 +171,13 @@
 				"box" : 				{
 					"maxclass" : "message",
 					"text" : "newhost Shovel",
-					"patching_rect" : [ 58.0, 57.0, 80.0, 15.0 ],
-					"numinlets" : 2,
-					"fontsize" : 9.0,
-					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"patching_rect" : [ 30.0, 57.0, 95.0, 18.0 ],
+					"fontname" : "Arial",
+					"numinlets" : 2,
 					"id" : "obj-12",
-					"fontname" : "Arial"
+					"numoutlets" : 1,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -185,13 +185,13 @@
 				"box" : 				{
 					"maxclass" : "newobj",
 					"text" : "js host_handle.js",
-					"patching_rect" : [ 58.0, 158.0, 87.0, 17.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 30.0, 158.0, 100.0, 20.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
 					"id" : "obj-13",
-					"fontname" : "Arial"
+					"numoutlets" : 2,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -199,13 +199,12 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "example msgs to this script:",
-					"linecount" : 2,
-					"patching_rect" : [ 58.0, 29.0, 100.0, 27.0 ],
+					"patching_rect" : [ 30.0, 29.0, 159.0, 20.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 0,
 					"id" : "obj-14",
-					"fontname" : "Arial"
+					"numoutlets" : 0,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -213,12 +212,12 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "listen to multicast msgs on LAN",
-					"patching_rect" : [ 210.0, 39.0, 171.0, 17.0 ],
+					"patching_rect" : [ 210.0, 29.0, 178.0, 20.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 0,
 					"id" : "obj-15",
-					"fontname" : "Arial"
+					"numoutlets" : 0,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -226,12 +225,12 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "select \"newclient\" msgs",
-					"patching_rect" : [ 295.0, 82.0, 153.0, 17.0 ],
+					"patching_rect" : [ 302.0, 87.0, 136.0, 20.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 0,
 					"id" : "obj-16",
-					"fontname" : "Arial"
+					"numoutlets" : 0,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -239,12 +238,12 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "send some data over the new socket",
-					"patching_rect" : [ 567.0, 33.0, 185.0, 17.0 ],
+					"patching_rect" : [ 567.0, 29.0, 206.0, 20.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 0,
 					"id" : "obj-17",
-					"fontname" : "Arial"
+					"numoutlets" : 0,
+					"fontsize" : 12.0
 				}
 
 			}
@@ -252,29 +251,56 @@
 				"box" : 				{
 					"maxclass" : "comment",
 					"text" : "objects will be added here for connections",
-					"patching_rect" : [ 336.0, 201.0, 249.0, 17.0 ],
+					"patching_rect" : [ 364.0, 225.0, 234.0, 20.0 ],
+					"fontname" : "Arial",
 					"numinlets" : 1,
-					"fontsize" : 9.0,
-					"numoutlets" : 0,
 					"id" : "obj-18",
-					"fontname" : "Arial"
+					"numoutlets" : 0,
+					"fontsize" : 12.0
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"source" : [ "obj-2", 0 ],
-					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-12", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"hidden" : 0,
-					"midpoints" : [  ]
+					"midpoints" : [ 39.5, 75.0, 39.5, 75.0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-3", 0 ],
-					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-9", 0 ],
+					"destination" : [ "obj-13", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 53.5, 105.0, 45.0, 105.0, 45.0, 144.0, 39.5, 144.0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-8", 0 ],
+					"destination" : [ "obj-13", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 68.5, 144.0, 39.5, 144.0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-5", 0 ],
+					"destination" : [ "obj-13", 0 ],
+					"hidden" : 0,
+					"midpoints" : [ 219.5, 144.0, 39.5, 144.0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"source" : [ "obj-7", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -291,8 +317,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-7", 0 ],
-					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-3", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
@@ -300,35 +326,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"source" : [ "obj-5", 0 ],
-					"destination" : [ "obj-13", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-8", 0 ],
-					"destination" : [ "obj-13", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-9", 0 ],
-					"destination" : [ "obj-13", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-12", 0 ],
-					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-2", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}
